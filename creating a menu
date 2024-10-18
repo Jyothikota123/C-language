@@ -1,0 +1,45 @@
+#include<stdio.h>
+#include<conio.h>
+void circle();
+void circle()
+{
+    int r;
+    printf("Enter radius:");
+    scanf("%d",&r);
+    float area1=3.14*r*r;
+    printf("the area of circle is: %d",area1);
+}
+void rect();
+void rect()
+{
+    int l,b;
+    printf("enter the values of l:,b:");
+    scanf("%d %d",&l,&b);
+    int area2=l*b;
+    printf("the area of rectangle is %d",area2);
+}
+void triangle(int,int,int);
+void triangle(int a,int b,int c)
+{
+    int p=a+b+c;
+    printf("the perimeter of triangle is %d",p);
+}
+void main()
+{
+    int n;
+    printf("\n1.CIRCLE");
+    printf("\n2.RECTANGLE");
+    printf("\n3.TRIANGLE");
+    printf("Enter your choice:");
+    scanf("%d",&n);
+    switch(n)
+    {
+        case 1:circle();
+               break;
+        case 2:rect();
+               break;
+        case 3:triangle(10,20,30);
+               break;
+        default:printf("invalid");                     
+    }
+}
