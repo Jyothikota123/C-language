@@ -8,7 +8,7 @@ int main()
   {
     r=n%10;
     n=n/10;
-    temp=temp*10+rev;
+    temp=temp*10+r;
   }
   printf("the reverse of the number is %d",temp);
   }
